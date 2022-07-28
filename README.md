@@ -1,6 +1,6 @@
 # UMINT
 Chayan Maitra, Dibyendu Bikash Seal, Vivek Das, Rajat K. De, "Unsupervised neural network for single cell Multi-omics INTegration"
-
+https://www.biorxiv.org/content/10.1101/2022.04.21.489041v1
 
 Authors' Information
 --------------------

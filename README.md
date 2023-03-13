@@ -40,4 +40,4 @@ https://doi.org/10.5281/zenodo.6349408
 
 Graphical abstract
 ------------------
-![UMINT graphical abstract](https://user-images.githubusercontent.com/7975435/158032294-47082e8c-b536-4aa1-a04e-e741066591c9.png)
+![UMINT graphical abstract](https://user-images.githubusercontent.com/113589317/224802852-f9c66508-024e-4b77-bff1-bbbfccb743a0.jpg)

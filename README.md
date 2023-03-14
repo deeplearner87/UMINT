@@ -1,5 +1,5 @@
 # UMINT
-Chayan Maitra, Dibyendu Bikash Seal, Vivek Das, Rajat K. De, "Unsupervised neural network for single cell Multi-omics INTegration"
+Maitra, C., Seal, D.B., Das, V. and De, R.K., 2022. UMINT: unsupervised neural network for single cell multi-omics integration. BioRxiv, pp.2022-04.
 https://www.biorxiv.org/content/10.1101/2022.04.21.489041v1
 
 Authors' Information
@@ -11,7 +11,7 @@ Machine Intelligence Unit, Indian Statistical Institute,
 
 E-mail: chayanmath25_r@isical.ac.in
 
-Dibyendu Bikash Seal
+Dibyendu B. Seal
 
 Tatras Data Services Pvt. Ltd., E64, Vasant Marg, Vasant Vihar, New Delhi 110057, India.
 

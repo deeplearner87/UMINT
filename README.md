@@ -2,11 +2,19 @@
 Maitra, C., Seal, D.B., Das, V. and De, R.K., 2022. UMINT: unsupervised neural network for single cell multi-omics integration. BioRxiv, pp.2022-04.
 https://www.biorxiv.org/content/10.1101/2022.04.21.489041v1
 
+## Architecture of UMINT 
 ![UMINT](https://user-images.githubusercontent.com/113589317/232395894-fe78cfdb-d1e4-42eb-ad76-92c5987992ae.png)
 
 
 ## Running UMINT
 To run UMINT, import `umint.py` from the `Proposed` directory and run the function `CombinedEncoder`. All the parameters are mentioned below for better understanding. One can also follow a ipynb file from the `Proposed` directory.
+
+### Requirements
+To run umint, one need to install `tensorflow`, `sklearn`, `scipy` and `pandas` packages. Installation codes are as follows:
++ `pip install tensorflow`
++ `pip install scikit-learn`
++ `pip install scipy`
++ `pip install pandas`
 
 ### Parameters
 All input parameters are as follows: layer_neuron, mid_neuron, seed, lambda_act, lambda_weight, epoch, bs
@@ -20,8 +28,21 @@ All input parameters are as follows: layer_neuron, mid_neuron, seed, lambda_act,
 + `epoch`: Total number of iteration for training.
 + `bs`: Training batch size.
 
-
-
+### Demo
+#### Code to run UMINT
+To run UMINT one need to import the script umint first. The script is in the `Proposed` directory. An example is provided below. Let `x1_train` and `x2_train` be two training datasets, comming from two different omics modalities, and `x1_test`, `x2_test` be their respective counterpart for validation.
+```
+import umint
+MyEncoder, MyAE = umint.CombinedEncoder(data=[x1_train, x2_train], val=[x1_test, x2_test],
+                                        layer_neuron=[128, 10], mid_neuron=64, seed=98,
+                                        lambda_act=0.0001, lambda_weight=0.001, epoch=25, bs=16)
+```
+#### Code to find the lower dimensional embedding.
+Once **UMINT** is trained, to find the latent lower dimensional embedding produced by UMINT, run the code below.
+```
+low = MyEncoder.predict([x1, x2]) 
+```
+To integrate multiple modalities please change the input accordingly. Size of data, val and layer_neuron must match to run `umint.py`
 
 # Authors' Information
 --------------------

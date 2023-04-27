@@ -18,9 +18,9 @@ To run umint, one need to install `tensorflow`, `sklearn`, `scipy` and `pandas` 
 
 ### Parameters
 All input parameters are as follows: `layer_neuron`, `mid_neuron`, `seed`, `lambda_act`, `lambda_weight`, `epoch`, `bs`
-+ `data`: List of input data matrices for training.
-+ `val`: List of data matrices for validation.
-+ `layer_neuron`: List of neurons in the modality encoding layer (modality wise)
++ `data`: List of input data matrices for training. [The input data matrices should be in the form of cells x features.]
++ `val`: List of data matrices for validation. [The validation data matrices also should be in the same format as input data matrices i.e. cells x features.]
++ `layer_neuron`: List of neurons in the modality encoding layer [modality wise].
 + `mid_neuron`: Dimension onto which the data is being projected.
 + `seed`: To reproduce the results set a seed value.
 + `lambda_act`: Activity regularizer parameter. 

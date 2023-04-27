@@ -30,7 +30,7 @@ All input parameters are as follows: `layer_neuron`, `mid_neuron`, `seed`, `lamb
 
 ### Demo
 #### Code to run UMINT
-To run UMINT one need to import the script umint first. The script is in the `Proposed` directory. An example is provided below. Let `x1_train` and `x2_train` be two training datasets, comming from two different omics modalities, and `x1_test`, `x2_test` be their respective counterpart for validation.
+To run UMINT one need to import the script umint first. The script is in the `Proposed` directory. An example is provided below. Let `x1_train` [cells x features] and `x2_train` [cells x features] be two training datasets, comming from two different omics modalities, and `x1_test` [cells x features], `x2_test` [cells x features] be their respective counterpart for validation.
 ```
 import umint
 MyEncoder, MyAE = umint.CombinedEncoder(data=[x1_train, x2_train], val=[x1_test, x2_test],

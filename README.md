@@ -7,10 +7,10 @@ https://www.biorxiv.org/content/10.1101/2022.04.21.489041v1
 
 
 ## Running UMINT
-To run UMINT, import `umint.py` from the `Proposed` directory and run the function `CombinedEncoder`. All the parameters are mentioned below for better understanding. One can also follow a ipynb file from the `Proposed` directory.
+To run UMINT, import `umint.py` from the `Proposed` directory and run the function `CombinedEncoder`. All the parameters are mentioned below for better understanding. One can also follow a .ipynb file from the `Proposed` directory.
 
 ### Requirements
-To run umint, one need to install `tensorflow`, `sklearn`, `scipy` and `pandas` packages. Installation codes are as follows:
+To run umint, one needs to install `tensorflow`, `sklearn`, `scipy` and `pandas` packages. Installation codes are as follows:
 + `pip install tensorflow`
 + `pip install scikit-learn`
 + `pip install scipy`
@@ -19,7 +19,7 @@ To run umint, one need to install `tensorflow`, `sklearn`, `scipy` and `pandas` 
 ### Parameters
 All input parameters are as follows: `layer_neuron`, `mid_neuron`, `seed`, `lambda_act`, `lambda_weight`, `epoch`, `bs`
 + `data`: List of input data matrices for training. [The input data matrices should be in the form of cells x features.]
-+ `val`: List of data matrices for validation. [The validation data matrices also should be in the same format as input data matrices i.e. cells x features.]
++ `val`: List of data matrices for validation. [The validation data matrices also should be in the same format as input data matrices i.e., cells x features.]
 + `layer_neuron`: List of neurons in the modality encoding layer [modality wise].
 + `mid_neuron`: Dimension onto which the data is being projected.
 + `seed`: To reproduce the results set a seed value.
@@ -30,7 +30,7 @@ All input parameters are as follows: `layer_neuron`, `mid_neuron`, `seed`, `lamb
 
 ### Demo
 #### Code to run UMINT
-To run UMINT one need to import the script umint first. The script is in the `Proposed` directory. An example is provided below. Let `x1_train` [cells x features] and `x2_train` [cells x features] be two training datasets, comming from two different omics modalities, and `x1_test` [cells x features], `x2_test` [cells x features] be their respective counterpart for validation.
+To run UMINT, one needs to import the script umint (within the `Proposed` directory) first. An example is provided below. Let `x1_train` [cells x features] and `x2_train` [cells x features] be two training datasets, coming from two different omics modalities, and `x1_test` [cells x features], `x2_test` [cells x features] be their respective counterparts for validation.
 ```
 import umint
 MyEncoder, MyAE = umint.CombinedEncoder(data=[x1_train, x2_train], val=[x1_test, x2_test],
@@ -42,7 +42,7 @@ Once **UMINT** is trained, to find the latent lower dimensional embedding produc
 ```
 low = MyEncoder.predict([x1, x2]) 
 ```
-To integrate multiple modalities please change the input accordingly. Size of data, val and layer_neuron must match to run `umint.py`
+To integrate multiple modalities please change the input accordingly. The sizes of data, val and layer_neuron must match in order to run `umint.py` successfully. 
 
 # Authors' Information
 --------------------
@@ -82,4 +82,5 @@ https://doi.org/10.5281/zenodo.7723340
 
 # Graphical abstract
 ------------------
-![UMINT graphical abstract](https://user-images.githubusercontent.com/113589317/232399872-46be07ba-4c88-4fd6-aea8-190ff3eb5412.png)
+![UMINT](https://user-images.githubusercontent.com/113589317/234973253-4dacf7d3-4302-489b-8b9c-68a63203fbb3.jpeg)
+

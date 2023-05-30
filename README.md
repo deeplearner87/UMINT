@@ -2,6 +2,10 @@
 Maitra, C., Seal, D.B., Das, V. and De, R.K., 2022. UMINT: unsupervised neural network for single cell multi-omics integration. BioRxiv, pp.2022-04.
 https://www.biorxiv.org/content/10.1101/2022.04.21.489041v1
 
+Now published at Frontiers in Molecular Biosciences
+Maitra, C., Seal, D.B., Das, V. and De, R.K., Unsupervised neural network for single cell Multi-omics INTegration (UMINT): An application to health and disease. Frontiers in Molecular Biosciences, 10, p.335.
+https://www.frontiersin.org/articles/10.3389/fmolb.2023.1184748/full
+
 ## Architecture of UMINT 
 ![UMINT](https://user-images.githubusercontent.com/113589317/232395894-fe78cfdb-d1e4-42eb-ad76-92c5987992ae.png)
 
